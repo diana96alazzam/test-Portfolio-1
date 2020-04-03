@@ -7,4 +7,4 @@ app.use(express.static('./public'));
 app.get('*', (request, response) =>
 response.status(404).send('404 page not found')
 );
-// app.listen(PORT, () => console.log(`listening to prot ${PORT}`));
+app.listen(PORT, () => console.log(`listening to prot ${PORT}`));
