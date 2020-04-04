@@ -1482,7 +1482,7 @@
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-    background: #062f2f url("images/overlay.png");
+    background: #222729 url("images/overlay.png");
     box-shadow: inset -0.25em 0 0.25em 0 rgba(10, 68, 65, 0.1);
     color: #fff;
     height: 100%;
@@ -1548,8 +1548,8 @@
     #logo p {
         position: relative;
         display: block;
-        font-size: 0.6em;
-        color: #c9b6a7;
+        font-size: 0.5em;
+        color: #1a6a7e;
         line-height: 1.25em;
         margin: 0.5em 0 0 0;
         font-family: 'Rajdhani', sans-serif;

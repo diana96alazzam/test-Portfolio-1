@@ -1,4 +1,33 @@
 /* Container */
+#header .bottom {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#header .bottom a {
+    color: #02766c;
+}
+
+@media screen and (max-width: 960px){
+#header {
+    display: flex;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 26vw;
+    z-index: 10002;
+    background: #222729 url(images/overlay.png);
+    box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
+}
+}
+
+
+/* #header .bottom a::before > *{
+    width: 1px;
+} */
+
 
 /* Image */
 
@@ -15,7 +44,6 @@
     .image.avatar48 {
         width: 48px;
         height: 48px;
-        background: #f00;
     }
 
         .image.avatar48 img {
@@ -403,7 +431,44 @@ button,
 
 /* Mobile */
 
+
 @media screen and (max-width: 736px) {
+
+    #nav ul li a span:before{
+        display: none;
+    }
+    #nav ul li a span{
+        font-size: 0.5em;
+    }
+    #logo h1 {
+        font-size: 0.4em;
+    }
+    #main > section.dark h2 {
+        font-size: 1.2em;
+    }
+    .container p{
+        font-size: 0.7em;
+    }
+    form input[type="text"], form input[type="email"], form input[type="password"], form select{
+        font-size: 0.5em;
+    }
+   
+    #aboutCont {
+        padding: 0vh 10vh;
+    }
+    #top p {
+        display: none;
+    }
+    .alt {
+        padding-top: 0px;
+    }
+
+    element.style {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
     /* Basic */
 
@@ -448,7 +513,33 @@ button,
 
 @media screen and (max-width: 960px) {
 
+
+    #submitBtn{
+        width: 35vw; font-size: 0.5em;
+    }
+    #messageText{
+        font-size: 0.5em;
+    }
+
     /* Basic */
+    #logo h1 {
+        font-size: 0.7em;
+    }
+    #logo .image {
+        display: none;
+    }
+    element.style {
+        display: flex;
+        flex-direction: column;
+    }
+    element.style {
+    height: 58vh;
+    }
+
+    #logo{
+        margin: 0px;
+    }
+ 
 
         html, body {
             overflow-x: hidden;
@@ -481,7 +572,7 @@ button,
 
     /* Header */
 
-        #header {
+        /* #header {
            
             display: block;
             height: 100%;
@@ -489,12 +580,11 @@ button,
             overflow-y: auto;
             position: fixed;
             top: 0;
-            width: 275px;
+            width: 20vw;
             z-index: 10002;
-            width: 275px;
             background: #222729 url("images/overlay.png");
             box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
-        }
+        } */
 
             #header .top {
                 position: relative;
@@ -503,8 +593,8 @@ button,
             #header .bottom {
                 border-top: solid 1px rgba(255, 255, 255, 0.05);
                 box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
-                padding-top: 2em;
-                margin-top: 2em;
+                padding: 1em;
+                margin-top: 0px;
                 position: relative;
             }
 
@@ -527,16 +617,8 @@ button,
     /* Main */
 
         #main {
-            -moz-backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            -ms-backface-visibility: hidden;
-            backface-visibility: hidden;
-            -moz-transition: -moz-transform 0.5s ease;
-            -webkit-transition: -webkit-transform 0.5s ease;
-            -ms-transition: -ms-transform 0.5s ease;
-            transition: transform 0.5s ease;
             padding-bottom: 1px;
-            margin-left: 0;
+            margin-left: 25vw;
         }
 
             #main > section {
